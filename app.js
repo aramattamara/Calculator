@@ -106,23 +106,23 @@ numberButtons.forEach(button =>{
 })
 
 operationButtons.forEach(button => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click',() => {
         calculator.chooseOperation(button.innerText)
         calculator.updateDisplay()
     })
 })
 
-equalsButton.addEventListener('click', button=>{
+equalsButton.addEventListener('click',button=>{
     calculator.compute()
     calculator.updateDisplay()
 })
 
-allClearButton.addEventListener('click', button =>{
+allClearButton.addEventListener('click',button =>{
     calculator.clear()
     calculator.updateDisplay()
 })
 
-deleteButton.addEventListener('click', button =>{
+deleteButton.addEventListener('click',button =>{
     calculator.delete()
     calculator.updateDisplay()
 })
